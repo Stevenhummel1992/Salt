@@ -1,0 +1,22 @@
+#!/bin/bash
+# Gemaakt door Steven Hummel
+# Voor Linux Services
+# Juni 2019
+
+#Verwijderen van munin-node
+sudo apt-get remove munin-node -y
+sudo apt-get remove --auto-remove munin-node -y
+sudo apt-get purge munin-node -y
+sudo apt-get purge --auto-remove munin-node -y
+
+#Verwijderen van apache
+sudo service apache2 stop -y
+sudo apt-get purge apache2 apache2-utils apache2.2-bin apache2-common -y
+sudo apt-get autoremove -y
+sudo rm -rf /etc/apache2 -y
+
+#Verwijderen van rsyslog
+sudo apt-get remove rsyslog -y
+sudo apt-get remove --auto-remove rsyslog -y
+sudo apt-get purge rsyslog -y
+sudo apt-get purge --auto-remove rsyslog -y
