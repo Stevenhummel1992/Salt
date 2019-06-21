@@ -20,3 +20,9 @@ sudo apt-get remove rsyslog -y
 sudo apt-get remove --auto-remove rsyslog -y
 sudo apt-get purge rsyslog -y
 sudo apt-get purge --auto-remove rsyslog -y
+
+#Verwijderen van docker
+sudo apt-get remove docker-ce -y
+sudo apt-get remove --auto-remove docker-ce -y
+sudo apt-get purge docker-ce -y
+sudo apt-get purge --auto-remove docker-ce -y
